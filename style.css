@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0rem;
+}
+
+@import url('/css/fonts.css');
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-height: 11vh;
+    overflow: hidden;
+    transition: 1s ease-in-out;
+}
+
+nav .logo h1.name {
+    font-size: 35px;
+    margin-top: 20px;
+    margin-left: 25px;
+    font-family: 'lexend';
+}
+
+.others .items .item {
+    margin-top: 20px;
+    padding: .5rem 0.2rem;
+    font-size: 19px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-image: url('/img/dove.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.collapse {
+    max-height: 50rem;
+}
+
+nav .icon .ber {
+    display: none;
+}
+
+nav .icon .ber i {
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 320px;
+}
+
+.others .items .item:hover {
+    background-color: lightcoral;
+    border-radius: 1rem;
+}
+
+.others .items {
+    display: flex;
+    flex-direction: row;
+    padding-right: 20px;
+}
+
+nav {
+    background-color: lightblue;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav .menu .menu-items {
+    display: flex;
+    flex-direction: row;
+}
+
+nav .menu .menu-items .menu-item {
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 1.5rem 1.1rem;
+}
+
+nav .menu .menu-items .menu-item:hover {
+    background-color: lightcoral;
+    font-size: 19px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media (max-width:720px) {
+    nav {
+        flex-direction: column !important;
+    }
+    nav .menu .menu-items {
+        flex-direction: column !important;
+    }
+    .others .items {
+        flex-direction: column !important;
+    }
+    nav .icon .ber {
+        display: initial;
+    }
+}
